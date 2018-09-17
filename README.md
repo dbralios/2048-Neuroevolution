@@ -5,3 +5,6 @@ The goal of this project is to create a bot for the game [2048](http://gabrielec
 
 ### Model Parameters
 The model used is a neural network. The input layer has one neuron for each cell of the game's grid, while the input value is the value of the cell divided by the current max value so that the input range is [0, 1]. Other methods of input handling should be studied. The output layer, consists of four neuron each representing a move (left, right, down, up) and the value represents the confidence in the specific move. Finally the topology of the hidden layers, that remains fixed, is determined by the size of the grid.    
+
+The genetic representation used are the weight matrices of the network, however it does not include all model parameters, such as the topology and input handling. Furthermore, such a long representation results in high-dimensionality of the model space.
+
