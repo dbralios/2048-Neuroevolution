@@ -8,3 +8,7 @@ The model used is a neural network. The input layer has one neuron for each cell
 
 The genetic representation used are the weight matrices of the network, however it does not include all model parameters, such as the topology and input handling. Furthermore, such a long representation results in high-dimensionality of the model space.
 
+### Evolution Parameters 
+The evolutionary algorithm first generates the initial population at random, then each creature is evaluated using the fitness function. After killing some of the least-fit creatures, offspring can be created from the best-fit creatures through evolution operations. Finally, the creatures are again evaluated and the cycle continues. Each cycle is called a *generation*, after a sufficient number of generations the algorithm converges to a maximum.
+
+The fitness function is defined as the average game score of around 70 games due to the game's random nature. At each step the network is fed the current grid and the move played is the one with the highest confidence, as long as that move is valid the game continues. Hence, the goal of the algorithm is to improve the fitness score.
