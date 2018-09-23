@@ -13,3 +13,4 @@ The evolutionary algorithm first generates the initial population at random, the
 
 The fitness function is defined as the average game score of around 70 games due to the game's random nature. At each step the network is fed the current grid and the move played is the one with the highest confidence, as long as that move is valid the game continues. Hence, the goal of the algorithm is to improve the fitness score.
 
+As the population size increases the chance of the algorithm converging to an optimal solution increases, as there is more genetic diversity. However, a large population size is not computationally efficient and the number of generations required to reach convergence increases. Usually sizes vary mostly between 50 and 200 creatures.
