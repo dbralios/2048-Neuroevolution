@@ -16,4 +16,4 @@ The fitness function is defined as the average game score of around 70 games due
 As the population size increases the chance of the algorithm converging to an optimal solution increases, as there is more genetic diversity. However, a large population size is not computationally efficient and the number of generations required to reach convergence increases. Usually sizes vary mostly between 50 and 200 creatures.
 
 ### Evolution Operations
-
+In every generation after the creatures are evaluated the least-fit are dumped so new ones can be created, replacing them. The processes of creating offspring, based on the best-fit creatures, are the evolution operations. These operations could be based on multiple or a single parent. In this project single parent mutations are used. Specifically, the offspring has the same weights as the parent, however the is an 1-2% chance of a mutation, a slight change in the weight value, happening. Another type of mutation would be to change all the weights of a single neuron in the network.
