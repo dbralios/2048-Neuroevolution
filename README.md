@@ -17,3 +17,7 @@ As the population size increases the chance of the algorithm converging to an op
 
 ### Evolution Operations
 In every generation after the creatures are evaluated the least-fit are dumped so new ones can be created, replacing them. The processes of creating offspring, based on the best-fit creatures, are the evolution operations. These operations could be based on multiple or a single parent. In this project single parent mutations are used. Specifically, the offspring has the same weights as the parent, however the is an 1-2% chance of a mutation, a slight change in the weight value, happening. Another type of mutation would be to change all the weights of a single neuron in the network.
+
+
+## Results
+First we try the method on a 2 by 2 board, where achieving the best strategy should be easier, aiming at extracting information that could help us tackle the 4 by 4 problem.
